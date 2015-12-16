@@ -125,10 +125,11 @@ typedef void(^DKCarouselViewTapBlock)();
     scrollView.scrollsToTop = NO;
     scrollView.delegate = self;
     
-    self.indicatorTintColor = [UIColor lightGrayColor];
+    self.indicatorTintColor = [UIColor grayColor];
     
     UIPageControl *pageControl = [UIPageControl new];
     pageControl.currentPageIndicatorTintColor = self.indicatorTintColor;
+    pageControl.pageIndicatorTintColor = [UIColor colorWithRed:(96/255.0) green:(96/255.0) blue:(96/255.0) alpha:0.4f];
     pageControl.userInteractionEnabled = NO;
     
     [self addSubview:scrollView];
